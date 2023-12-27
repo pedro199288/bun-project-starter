@@ -1,0 +1,22 @@
+{
+  "name": "my-library",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "bun src/index.ts",
+    "build": "bun build src/index.ts --outdir=dist",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "format": "prettier --write 'src/**/*.{ts,tsx,json}'",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "prettier": "^3.1.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.2"
+  },
+  "dependencies": {}
+}
